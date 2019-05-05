@@ -1,0 +1,125 @@
+.container-nav {
+    position: fixed;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 5vh;
+    width: 100%;
+    top: 0;
+    background-color: #656565;
+}
+
+.nav-item {
+    flex: 1;
+    margin: auto;
+    display: block;
+    text-align: center;
+    color: white;
+    clear: both;
+   
+}
+.nav-head {
+    flex: 1;
+    margin: 1vh;
+    display: inline;
+    color: white;
+    clear: both;
+    flex-direction: column;
+    margin: 0 auto;
+   
+   
+}
+body {
+    text-align: left;
+    text-decoration: none;
+}
+a:-webkit-any-link{
+    text-decoration: none;
+    color: white;
+}
+@media only screen and (max-width: 992px) {
+    .container {
+        height: 30%;
+        flex-direction: column;
+        background-color: #656565;
+        border: 1px solid white;
+    }
+    .nav-item {
+        line-height: 50px;
+        white-space: nowrap;
+        border: 1px solid white;
+        width: 100%;
+        margin: auto;
+    }
+}
+.nav-title{
+    width:50%;
+}
+.nav-icon {
+    flex: 1;
+    height: auto;
+    width: 4vh;
+    margin: auto;
+    padding: 5px;
+    padding-top: 0px;
+    vertical-align: middle;
+    margin-right: 10px;
+
+}
+
+.container-full{
+    padding: 75px;
+}
+.card-img-top{
+    height: 10vh;
+    width: 10vh;
+}
+//dashboard
+.dashboard {
+    display: inline-flex;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.thumbnail-image {
+    flex: 1;
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+}
+.thumbnail-item{
+    flex: 1;
+    width: 25vh;
+    position: relative;
+    z-index: 1;
+    border: 5px solid white;
+}
+.thumbnail-content {
+    flex: 1;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    font-size: 20pt;
+    width: 100%;
+    border: 1px solid white;
+}
+//icon group
+.thumbnail-icon-group{
+    display: inline-flex;
+    width: 90px;
+    height: 30px;
+    overflow: hidden;
+    float: right;
+}
+
+.thumbnail-icon-button{
+    flex: 1;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
