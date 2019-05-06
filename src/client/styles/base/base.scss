@@ -114,6 +114,19 @@ a:-webkit-any-link{
     width: 100%;
     border: 1px solid white;
 }
+.thumbnail-content2 {
+    flex: 1;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin: auto;
+    // position: absolute;
+    // bottom: 0;
+    height: 4vh;
+    font-size: 20pt;
+    width: 100%;
+    border: 1px solid white;
+}
 //icon group
 .thumbnail-icon-group{
     display: inline-flex;
