@@ -79,6 +79,9 @@ a:-webkit-any-link{
     display: inline-flex;
     width: 100%;
     border: 1px solid black;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 200vh;
 }
 
 .thumbnail-image {
@@ -90,7 +93,7 @@ a:-webkit-any-link{
 }
 .thumbnail-item{
     flex: 1;
-    width: 25vh;
+    width: 25vw;
     position: relative;
     z-index: 1;
     border: 5px solid white;
@@ -101,8 +104,8 @@ a:-webkit-any-link{
     color: white;
     text-align: center;
     margin: auto;
-    position: absolute;
-    bottom: 0;
+    // position: absolute;
+    // bottom: 0;
     height: 5vh;
     font-size: 20pt;
     width: 100%;
@@ -122,4 +125,12 @@ a:-webkit-any-link{
     width: 30px;
     height: 30px;
     padding: 2px;
+}
+
+//blog-card
+.card-img-top {
+    flex: 1;
+}
+.card {
+    display: inline-flex;
 }

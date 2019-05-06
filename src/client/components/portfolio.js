@@ -10,24 +10,25 @@ class Portfolio extends Component {
     super(props);
     this.state = {
       //{ title: 'green', imageData:{ThumbnailImage} }, {title: 'yellow', imageData: {ThumbnailImage}}, { title: 'blue', imageData:{ThumbnailImage} }, { title: 'white', imageData:{ThumbnailImage} }
-        items: [{title: '', imageData: ''}]
+        items: []
       };
   }
   getAll(){
     axios.get('/api/dashboard/getAllThumbnails')
       .then(res => {
-        const persons = res.data
+        const persons = res.data;
         persons.map(res => {
           console.log(res);
-          this.setState( {
-            items: [
-              {title: res.title,
-                imageData:{ThumbnailImage}}
-            ]
+            const item = res.items;
+            this.setState(prevState => ({
+              items: [
+                  ...prevState.items,
+                  {title: res.title,
+                    imageData:{ThumbnailImage}}
+                  ]
+            }))
+
           })
-        })
-       
-        console.log(this.state);
       })
       .catch(err => {
         console.log(err);
