@@ -76,27 +76,30 @@ a:-webkit-any-link{
 }
 //dashboard
 .dashboard {
-    display: inline-flex;
+    display: flex;
     width: 100%;
     border: 1px solid black;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 200vh;
+   
 }
 
 .thumbnail-image {
     flex: 1;
-    height: 30vh;
+    height: 25vh;
     width: 100%;
     position: relative;
-    object-fit: cover;
+    // object-fit: cover;
 }
 .thumbnail-item{
-    flex: 1;
-    width: 25vw;
+    // flex: 1;
+    border: 1px solid red !important;
+    // width: 25vw;
+    width: 23% ;
     position: relative;
-    z-index: 1;
+    // z-index: 1;
     border: 5px solid white;
+    margin: 1%;
 }
 .thumbnail-content {
     flex: 1;
@@ -106,7 +109,7 @@ a:-webkit-any-link{
     margin: auto;
     // position: absolute;
     // bottom: 0;
-    height: 5vh;
+    height: 4vh;
     font-size: 20pt;
     width: 100%;
     border: 1px solid white;

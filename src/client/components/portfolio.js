@@ -18,7 +18,6 @@ class Portfolio extends Component {
       .then(res => {
         const persons = res.data;
         persons.map(res => {
-          console.log(res);
             const item = res.items;
             this.setState(prevState => ({
               items: [

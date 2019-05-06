@@ -16,9 +16,9 @@ class BlogForm extends Component {
         // this.handleGender = this.handleGender.bind(this);
         // this.handleEmail = this.handleEmail.bind(this);
         // this.handleDesc = this.handleDesc.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleChange = this.handleChange.bind(this);
-        this.handleInput = this.handleInput.bind(this);
+        // this.handleSubmit = this.handleSubmit.bind(this);
+        // this.handleChange = this.handleChange.bind(this);
+        // this.handleInput = this.handleInput.bind(this);
     }
 
     handleInput(e) {
@@ -56,8 +56,8 @@ class BlogForm extends Component {
         console.log(event.target);
         this.setState({data: event.target.value});
     }
-       updateState(e) {
-        this.setState({name: e.target.value});
+       updateState = (e) => {
+        this.setState({[e.target.name]: e.target.value});
         }
     render() {
         return (
