@@ -92,8 +92,6 @@ a:-webkit-any-link{
     // object-fit: cover;
 }
 .thumbnail-item{
-    // flex: 1;
-    border: 1px solid red !important;
     // width: 25vw;
     width: 23% ;
     position: relative;
@@ -149,4 +147,29 @@ a:-webkit-any-link{
 }
 .card {
     display: inline-flex;
+}
+
+//blog-details
+.link-icon {
+    height:5vh;
+    width: 2vw;
+}
+
+//index
+
+.carousel-inner {
+    height: 80vh;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-sm {
+    font-size: 10pt;
+}
+h1{
+    color: black;
+}
+a {
+    color:black;
 }

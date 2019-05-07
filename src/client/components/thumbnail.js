@@ -12,7 +12,7 @@ const Thumbnail = (props) => {
                 count++;
                 if(count <= 8){
                    return (<div className="thumbnail-item">
-                        <img className="thumbnail-image" key={count} src={ThumbnailImage} />
+                        <img className="thumbnail-image" key={count} src={item.imageData} />
                         <div className="thumbnail-content" key={item.title}>{item.title}</div>
                     </div>
                    );

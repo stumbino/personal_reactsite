@@ -5,6 +5,7 @@ import ApprovalCard from './approval-card';
 import faker from 'faker';
 import axios from 'axios';
 import BlogForm from './blog-form';
+import BlogDetails from './blog-details';
 class Blog extends Component {
   constructor(props){
     super(props);
@@ -44,11 +45,12 @@ class Blog extends Component {
     return (
       <div>
         <div className="container-full">
-          <h1>Hello World!</h1>
+          <h1>Blog</h1>
+          <BlogDetails />
+          <h1>Add Comments:</h1>
           <BlogForm />
           <BlogCard items={this.state.items} />
         </div>
-      <ApprovalCard />
       </div>
     )
  

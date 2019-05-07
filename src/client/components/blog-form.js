@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Form, Button, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
+import MaleCharacter from '../images/4x/man-glasses@4x.png';
+import FemaleCharacter from '../images/4x/woman-business@4x.png';
 class BlogForm extends Component {
     constructor(props){
         super(props);
@@ -35,6 +37,7 @@ Gender: M <input defaultChecked type ="radio" value ="M" name="gender" onChange 
     this.setState({[e.target.name]: e.target.value});
     }
     handleSubmit = (e) => {
+        console.log(this.state.gender);
         axios.post('/api/blog/postBlog', {
             fullname:this.state.name,
             email: this.state.email,

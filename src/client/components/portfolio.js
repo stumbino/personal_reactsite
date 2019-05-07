@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import Thumbnail from './thumbnail';
-// import PortfolioImage from '../images/4x/img-stack@4x.png';
-import ThumbnailImage from '../images/2x/img-stack@2x.png';
 import ThumbnailButtonGroup from './thumbnail-button-group';
 import axios from 'axios';
 class Portfolio extends Component {
@@ -23,7 +21,7 @@ class Portfolio extends Component {
               items: [
                   ...prevState.items,
                   {title: res.title,
-                    imageData:{ThumbnailImage}}
+                    imageData:res.imageUrl}
                   ]
             }))
 
