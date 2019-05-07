@@ -4,6 +4,7 @@ import BlogCard from './blog-card';
 import ApprovalCard from './approval-card';
 import faker from 'faker';
 import axios from 'axios';
+const URL = require('../config/key').rootRoute;
 import BlogForm from './blog-form';
 import BlogDetails from './blog-details';
 class Blog extends Component {
@@ -15,7 +16,7 @@ class Blog extends Component {
       };
   }
   getAll = async () =>{
-    await axios.get('/api/blog/getAllBlogs')
+    await axios.get(URL + '/api/blog/getAllBlogs')
       .then(res => {
         const persons = res.data;
         persons.map(res => {
@@ -31,7 +32,6 @@ class Blog extends Component {
                   ]
             }))
           })
-          console.log(this.state.items);
       })
       .catch(err => {
         console.log(err);

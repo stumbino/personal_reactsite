@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import axios from 'axios';
-import { Link } from "react-router-dom";
 import { Card } from 'react-bootstrap';
 import MaleCharacter from '../images/4x/man-glasses@4x.png';
 import FemaleCharacter from '../images/4x/woman-business@4x.png';

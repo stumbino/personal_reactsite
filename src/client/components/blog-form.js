@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Form, Button, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
+const URL = require('../config/key').rootRoute;
 import MaleCharacter from '../images/4x/man-glasses@4x.png';
 import FemaleCharacter from '../images/4x/woman-business@4x.png';
 class BlogForm extends Component {
@@ -38,7 +39,8 @@ Gender: M <input defaultChecked type ="radio" value ="M" name="gender" onChange 
     }
     handleSubmit = (e) => {
         console.log(this.state.gender);
-        axios.post('/api/blog/postBlog', {
+        console.log(URL);
+        axios.post(URL +'/api/blog/postBlog', {
             fullname:this.state.name,
             email: this.state.email,
             description: this.state.desc,

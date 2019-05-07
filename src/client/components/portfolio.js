@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Thumbnail from './thumbnail';
 import ThumbnailButtonGroup from './thumbnail-button-group';
 import axios from 'axios';
+const URL = require('../config/key').rootRoute;
 class Portfolio extends Component {
 
   constructor(props){
@@ -12,7 +13,7 @@ class Portfolio extends Component {
       };
   }
   getAll(){
-    axios.get('/api/dashboard/getAllThumbnails')
+    axios.get(URL + '/api/dashboard/getAllThumbnails')
       .then(res => {
         const persons = res.data;
         persons.map(res => {

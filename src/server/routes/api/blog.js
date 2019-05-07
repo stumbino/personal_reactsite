@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
-const Blog = require('../../models/blog');
+const Blog = require('../../models/Blog');
 router.get('/', (req, res) => {
     res.send({
         message: 'Hello World'
